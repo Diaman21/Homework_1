@@ -4,20 +4,15 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-Console.WriteLine("Введите число А");
-string input = Console.ReadLine();
-int a = int.Parse(input);
-Console.WriteLine("Введите число Б");
-int b = int.Parse(input2);
-int max = 0;
-int min = 0;
-
-if (a > b) max = a;
-if (a > b) min = b;
-if (b > a) max = b;
-if (b > a) min = a;
-
-Console.WriteLine("Большее число = ");
-Console.WriteLine(max);
-Console.WriteLine("Меньшее число = ");
-Console.WriteLine(min);
+Console.Write("Введите a: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите b: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+if (num1>num2)
+{
+    Console.WriteLine($"а {num1} больше, чем b {num2}");
+}
+else
+{
+   Console.WriteLine($"b {num2} больше, чем a {num1}");
+}
